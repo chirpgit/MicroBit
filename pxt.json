@@ -1,0 +1,33 @@
+{
+    "name": "蓝牙控制&距离保持",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "startbit": "github:lobot-robot/startbit#b9cabcf7b1a2b44e66cf6934b37f3bf6bd001297",
+        "bluetooth": "*",
+        "microphone": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "main.py"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0
+                }
+            }
+        }
+    }
+}
